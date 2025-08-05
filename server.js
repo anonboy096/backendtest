@@ -23,7 +23,7 @@ app.use(cors({
 app.use(express.json({ limit: '50mb' }));
 app.use('/uploads', express.static(path.join(__dirname, 'public', 'uploads')));
 app.use(express.static(path.join(__dirname, 'build')));
-word
+
 // In-memory storage for photo metadata
 let photoDatabase = {
   childhoodPhoto: null,
@@ -218,4 +218,5 @@ app.listen(PORT, () => {
   console.log(`🌐 API available at: http://localhost:${PORT}/api/photos`);
   console.log(`🌐 App available at: http://localhost:${PORT}`);
   console.log(`📸 Uploads directory: ${uploadsDir}`);
+
 }); 
