@@ -17,7 +17,7 @@ if (!fs.existsSync(uploadsDir)) {
 
 // Middleware
 app.use(cors({
-  origin: ['https://rakshabandhan-gift.vercel.app'],
+  origin: ['https://rakshabandhan-gift.vercel.app', 'http://localhost:3000'],
   credentials: true
 }));
 app.use(express.json({ limit: '50mb' }));
