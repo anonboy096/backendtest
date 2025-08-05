@@ -17,7 +17,7 @@ if (!fs.existsSync(uploadsDir)) {
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://127.0.0.1:3000'],
+  origin: ['https://rakshabandhan-gift.vercel.app'],
   credentials: true
 }));
 app.use(express.json({ limit: '50mb' }));
@@ -220,3 +220,4 @@ app.listen(PORT, () => {
   console.log(`📸 Uploads directory: ${uploadsDir}`);
 
 }); 
+
